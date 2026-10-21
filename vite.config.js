@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
 
 // PULSE-007: When deploying to CDN, install vite-plugin-sri and uncomment:
 // import sri from 'vite-plugin-sri';
@@ -7,6 +8,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [
     react(),
+    tailwindcss(),
     // sri(), // PULSE-007: Generates integrity hashes for all built assets
   ],
   base: './',
